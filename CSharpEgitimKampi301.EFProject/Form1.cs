@@ -71,6 +71,14 @@ namespace CSharpEgitimKampi301.EFProject
 
              catch { MessageBox.Show("Hata oluştu idyi kontrol et", "bildirim", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmLocation frmLocation = new FrmLocation();
+            frmLocation.Visible = true;
+            this.Visible = false;
+            
+        }
     }
     
 }
