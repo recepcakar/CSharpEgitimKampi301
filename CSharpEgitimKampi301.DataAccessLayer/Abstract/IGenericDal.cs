@@ -10,7 +10,7 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Abstract
     public interface IGenericDal<T> where T : class // burada T class tipi olmalı kısıtlamasını getiriyoruz
     {
         void insert(T entity); // varsayılan olarak public o yüzden yazmamalıyız tek public olabiliyor zaten
-         void delete(int id);
+         void delete(T entity);
         void update(T entity);
         List<T> getAll();
         T GetById(int id);
