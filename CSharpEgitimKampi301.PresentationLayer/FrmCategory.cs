@@ -68,5 +68,10 @@ namespace CSharpEgitimKampi301.PresentationLayer
             _categoryService.Tupdate(categoryValues);
             MessageBox.Show("Güncellendi    ", "bilgi");
         }
+
+        private void FrmCategory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
