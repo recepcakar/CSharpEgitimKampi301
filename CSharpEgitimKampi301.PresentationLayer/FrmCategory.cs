@@ -21,7 +21,7 @@ namespace CSharpEgitimKampi301.PresentationLayer
         public FrmCategory() //ctor yapıyoruz
         {
             
-            _categoryService = new CategoryManager(new EFCategoryDal() );
+            _categoryService = new CategoryManager(new EFCategoryDal() );  //cat manager'a catdalı çağırıyoruz otomatik genericrepo<category> ekleniyor!!!
             InitializeComponent();
         }
 

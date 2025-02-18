@@ -12,9 +12,10 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Repostories
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
         KampContext kampContext=new KampContext();
-        private readonly DbSet<T> _object;
+        private readonly DbSet<T> _object;    
         public GenericRepository()
         {
+            
             _object = kampContext.Set<T>();
         }
         public void delete(T entity)
@@ -25,9 +26,10 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Repostories
         }
 
         public List<T> getAll()
-        {
+        { 
            return _object.ToList();
         }
+        
 
         public T GetById(int id)
         {
