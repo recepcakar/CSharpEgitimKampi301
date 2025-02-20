@@ -31,9 +31,10 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Repostories
         }
         
 
-        public T GetById(int id)
+        public virtual T GetById(int id)
         {
-            return _object.Find(id);
+        
+            return _object.Find(id); ;
         }
 
         public void insert(T entity)

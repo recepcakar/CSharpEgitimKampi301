@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimKampi301.BusinessLayer.Concreate
 {
-    internal class ProductManger : IProductService
+    public class ProductManger : IProductService
     {
         private readonly IProductDal _productDal;
 
@@ -31,6 +31,11 @@ namespace CSharpEgitimKampi301.BusinessLayer.Concreate
         public Product TGetById(int id)
         {
             return _productDal.GetById(id);
+        }
+
+        public List<object> TGetProductsWithCategory()
+        {
+            return _productDal.GetProductsWithCategory();
         }
 
         public void Tinsert(Product entity)
